@@ -11,5 +11,7 @@ jobs:
  run-on-windows-machine:
   runs-on: windows-latest
   steps:
-    - run : echo "It is running on $RUNNER_OS"
+    - name : shell
+      shell: bash
+      run : echo "It is running on $RUNNER_OS"
   
