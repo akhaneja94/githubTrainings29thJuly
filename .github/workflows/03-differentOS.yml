@@ -1,0 +1,11 @@
+name : Workflow for running in diff OS
+
+on:
+ push
+ 
+jobs:
+ run-on-ubuntu-machine:
+  runs-on: ubuntu-latest
+  steps:
+    - run : echo "It is running on $RUNNER_OS"
+  
